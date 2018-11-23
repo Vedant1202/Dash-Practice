@@ -10,7 +10,7 @@ df2.set_index('NAME', inplace=True)
 
 list_population_cols = [col for col in df2.columns if col.startswith('POP')]
 df2 = df2[list_population_cols]
-print(df2)
+
 
 data = [ go.Scatter(x=df2.columns,
                    y=df2.loc[state],
